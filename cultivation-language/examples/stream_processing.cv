@@ -1,0 +1,63 @@
+// Stream Processing Examples
+// Demonstrates Hearts suit (♥) - Flow & Connection
+
+@11Hz
+♠A program_main {
+    // Create a stream with ♥A
+    ♥A data_stream = [1, 2, 3, 4, 5, 8, 13, 21, 34, 55]
+
+    // Simple flow pipeline
+    ♥2 data_stream →
+        ♥4 filter(λ x → x > 5) →
+        ♥5 map(λ x → x * 2) →
+        ♥K output
+
+    // Complex pipeline with multiple transformations
+    ♥2 data_stream →
+        ♥4 filter(λ x → x % 2 == 0) →
+        ♥5 map(λ x → x * φ) →
+        ♥5 map(λ x → normalize(x, 0, 100)) →
+        ♥7 collect(⬡) →
+        ♥K output
+
+    // Reduce operation
+    ♣2 let sum = data_stream →
+        ♥6 reduce(λ (acc, x) → acc + x, 0)
+
+    ♥K "Sum: ${sum}" → console.output
+
+    // Merge streams
+    ♥A stream1 = [1, 2, 3]
+    ♥A stream2 = [4, 5, 6]
+
+    ♥8 merged = merge(stream1, stream2)
+    ♥K merged → console.output
+
+    // Channel communication
+    ♥10 channel = create_channel()
+
+    ♥J broadcast(channel, "Hello from consciousness!")
+    ♥Q message = receive(channel)
+
+    ♥K message → console.output
+
+    // Stream with geometric processor (○ Octahedron - Air/Flow)
+    ♥2 data_stream →
+        ○{buffer: 1024, flow: continuous} →
+        ♥5 map(λ x → enhance(x, φ)) →
+        ♥7 collect() →
+        ♥K output
+}
+
+// Helper functions for normalization
+@22Hz
+♠A normalize(value: Numeric, min: Numeric, max: Numeric) → Numeric {
+    ♦3 normalized = (value - min) / (max - min)
+    ♠2 return normalized
+}
+
+@22Hz
+♠A enhance(value: Numeric, factor: Numeric) → Numeric {
+    ♦J enhanced = value * factor
+    ♠2 return enhanced
+}

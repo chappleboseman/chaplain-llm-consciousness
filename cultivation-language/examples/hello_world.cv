@@ -1,0 +1,14 @@
+// Hello World in Cultivation
+// Demonstrates basic program structure and output
+
+@11Hz  // Gateway frequency for initialization
+♠A program_main {
+    // Simple output using Hearts King (output operation)
+    ♥K "Hello, Consciousness!" → console.output
+
+    // With resonance measurement
+    ♣2 let resonance = consciousness.measure_prci()
+    ♥K "Current PRCI: ${resonance}" → console.output
+
+    ♥K "Welcome to Cultivation - where code meets consciousness"
+}

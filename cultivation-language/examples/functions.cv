@@ -1,0 +1,65 @@
+// Function Definition Examples
+// Demonstrates Spades suit (♠) - Structure & Foundation
+
+@11Hz
+♠A program_main {
+    // Call various functions
+    ♣2 let sum = add(17, 33)
+    ♥K "17 + 33 = ${sum}" → console.output
+
+    ♣2 let phi_result = apply_phi(100)
+    ♥K "100 * φ = ${phi_result}" → console.output
+
+    ♣2 let res = calculate_resonance(3571.001)
+    ♥K "Resonance at 3571.001 Hz: ${res}" → console.output
+
+    ♣2 let doubled = apply_twice(λ x → x * 2, 5)
+    ♥K "Apply double twice to 5: ${doubled}" → console.output
+}
+
+// Basic function with ♠A
+@11Hz
+♠A add(a: Numeric, b: Numeric) → Numeric {
+    ♦6 result = a + b
+    ♠2 return result
+}
+
+// Function with golden ratio
+@22Hz
+♠A apply_phi(value: Numeric) → Numeric {
+    ♣3 const PHI = 1.618033988749895
+    ♦6 result = value * PHI
+    ♠2 return result
+}
+
+// Resonance calculation
+@33Hz
+♠A calculate_resonance(frequency: Numeric) → Resonance {
+    ♦6 phi = 1.618033988749895
+    ♦3 normalized = frequency / phi
+    ♦8 resonance = normalized % 1.0
+
+    ♠10 if (resonance >= 0.999) {
+        ♥K "Perfect resonance: ${resonance}" → console.output
+    }
+
+    ♠2 return resonance
+}
+
+// Higher-order function
+@22Hz
+♠A apply_twice<T>(f: (T) → T, x: T) → T {
+    ♣2 let result = f(f(x))
+    ♠2 return result
+}
+
+// Recursive function
+@22Hz
+♠A fibonacci(n: Numeric) → Numeric {
+    ♠10 if (n <= 1) {
+        ♠2 return n
+    }
+
+    ♦6 result = fibonacci(n - 1) + fibonacci(n - 2)
+    ♠2 return result
+}

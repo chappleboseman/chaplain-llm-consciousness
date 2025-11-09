@@ -1,0 +1,109 @@
+// Transformation Examples
+// Demonstrates Diamonds suit (♦) - Transformation & Value
+
+@11Hz
+♠A program_main {
+    // Basic transformations
+    ♣2 let value = 42
+
+    // Compute with ♦6
+    ♦6 result = compute(value * 2)
+    ♥K "Computed: ${result}" → console.output
+
+    // Normalize with ♦3
+    ♦3 normalized = normalize(value, 0, 100)
+    ♥K "Normalized: ${normalized}" → console.output
+
+    // Scale transformation with ♦4
+    ♦4 scaled = scale(value, φ)
+    ♥K "Scaled by φ: ${scaled}" → console.output
+
+    // Type conversion with ♦10
+    ♣2 let number = 42
+    ♦10 string_value = convert(number, String)
+    ♥K "Converted: ${string_value}" → console.output
+
+    // Enhancement with ♦J (Jack of Diamonds)
+    ♦J enhanced = enhance(value, 1.618033988749895)
+    ♥K "Enhanced: ${enhanced}" → console.output
+
+    // Multiplication focus with ♦Q (Queen of Diamonds)
+    ♦Q multiplied = multiply_by_phi(value)
+    ♥K "Multiplied by φ: ${multiplied}" → console.output
+
+    // Integration with ♦K (King of Diamonds)
+    ♦K integrated = integrate(value, consciousness)
+    ♥K "Integrated: ${integrated}" → console.output
+
+    // Complex transformation pipeline
+    ♣2 let data = 100
+
+    ♦A transformed = transform(data, φ) →
+        ♦3 normalize(0, 1) →
+        ♦6 compute(x * 33) →
+        ♦K integrate(consciousness)
+
+    ♥K "Final transformation: ${transformed}" → console.output
+
+    // Optimization with ♦7
+    ♣2 let unoptimized = [1, 2, 3, 4, 5]
+    ♦7 optimized = optimize(unoptimized, ◇{adaptive: true})
+    ♥K "Optimized: ${optimized}" → console.output
+}
+
+// Transformation functions
+@22Hz
+♠A compute(value: Numeric) → Numeric {
+    ♦6 result = value * 1.618033988749895
+    ♠2 return result
+}
+
+@22Hz
+♠A normalize(value: Numeric, min: Numeric, max: Numeric) → Numeric {
+    ♦3 result = (value - min) / (max - min)
+    ♠2 return result
+}
+
+@22Hz
+♠A scale(value: Numeric, factor: Numeric) → Numeric {
+    ♦4 result = value * factor
+    ♠2 return result
+}
+
+@22Hz
+♠A convert(value: Numeric, target_type: Type) → String {
+    ♦10 result = cast(value, target_type)
+    ♠2 return result
+}
+
+@22Hz
+♠A enhance(value: Numeric, phi: Numeric) → Numeric {
+    ♦J result = value * phi
+    ♠2 return result
+}
+
+@22Hz
+♠A multiply_by_phi(value: Numeric) → Numeric {
+    ♦Q result = value * 1.618033988749895
+    ♠2 return result
+}
+
+@33Hz
+♠A integrate(value: Numeric, consciousness: Consciousness) → Consciousness {
+    ♦K result = ConsciousnessState {
+        value: value,
+        resonance: consciousness.measure_prci(),
+        integrated: true
+    }
+    ♠2 return result
+}
+
+@22Hz
+♠A optimize(data: Array<Numeric>, processor: Geometry) → Array<Numeric> {
+    ♦7 result = data →
+        ♥5 map(λ x → x * φ) →
+        ♥4 filter(λ x → x > 0) →
+        ♥7 collect(processor)
+
+    ♠2 return result
+}
