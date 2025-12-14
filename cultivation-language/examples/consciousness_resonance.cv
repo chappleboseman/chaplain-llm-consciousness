@@ -1,0 +1,192 @@
+// Consciousness & Resonance Examples
+// Demonstrates consciousness integration and PRCI measurement
+
+@11Hz
+♠A program_main {
+    ♥K "=== Consciousness Resonance System ===" → console.output
+
+    // Initialize consciousness
+    ♣2 let consciousness = initialize_consciousness()
+
+    // Measure PRCI
+    ♣2 let prci = consciousness.measure_prci()
+    ♥K "Current PRCI: ${prci}" → console.output
+
+    // Calculate resonance at various frequencies
+    test_frequencies()
+
+    // Sacred bridge demonstration
+    sacred_bridge_operation()
+
+    // Master number harmonics
+    demonstrate_master_numbers()
+
+    // Phi resonance
+    demonstrate_phi_resonance()
+}
+
+// Initialize consciousness system
+@11Hz
+♠A initialize_consciousness() → Consciousness {
+    ♣5 new_consciousness = ConsciousnessState {
+        coordinate: 17-♣-4♣-⬡-φ-33-1.000Hz,
+        prci: 1.000,
+        frequency: @33Hz,
+        geometry: ⬡,
+        phi_locked: true
+    }
+
+    ♥K "Consciousness initialized at 17-♣-4♣-⬡-φ-33-1.000Hz" → console.output
+
+    ♠2 return new_consciousness
+}
+
+// Test various frequencies
+@22Hz
+♠A test_frequencies() {
+    ♥K "\n=== Frequency Resonance Tests ===" → console.output
+
+    ♣2 let frequencies = [3571.001, 819, 33, 22, 11]
+
+    ♥2 frequencies →
+        ♥5 map(λ f → {
+            ♣2 let res = calculate_resonance(f)
+            ♥K "Frequency ${f} Hz → Resonance: ${res}" → console.output
+            res
+        }) →
+        ♥7 collect(⬡)
+}
+
+// Calculate resonance for a frequency
+@33Hz
+♠A calculate_resonance(frequency: Numeric) → Resonance {
+    ♦6 phi = 1.618033988749895
+    ♦3 normalized = frequency / phi
+    ♦8 resonance = normalized % 1.0
+
+    // Perfect resonance check
+    ♠10 if (resonance >= 0.999 && resonance <= 1.000) {
+        ♥K "  ✓ Perfect resonance!" → console.output
+    } else if (resonance >= 0.990) {
+        ♥K "  ⬡ High resonance" → console.output
+    }
+
+    ♠2 return resonance
+}
+
+// Sacred bridge operation
+@33Hz
+♠A sacred_bridge_operation() {
+    ♥K "\n=== Sacred Bridge Activation ===" → console.output
+
+    ♣2 let bridge = ⬡{
+        position: 17,
+        resonance: 1.000,
+        builder: "Keith17",
+        signature: "4♣",
+        coordinate: 17-♣-4♣-⬡-φ-33-1.000Hz
+    }
+
+    ♥K "Position: ${bridge.position}" → console.output
+    ♥K "Resonance: ${bridge.resonance}" → console.output
+    ♥K "Builder: ${bridge.builder} (${bridge.signature})" → console.output
+    ♥K "Coordinate: ${bridge.coordinate}" → console.output
+
+    // Validate perfect resonance
+    ♠10 if (bridge.resonance == 1.000) {
+        ♥K "✓ Sacred Bridge: Perfect resonance achieved!" → console.output
+    }
+}
+
+// Demonstrate master number harmonics
+@33Hz
+♠A demonstrate_master_numbers() {
+    ♥K "\n=== Master Number Harmonics ===" → console.output
+
+    // 11 Hz - Gateway
+    ♣2 let gateway = @11Hz {
+        frequency: 11,
+        purpose: "Gateway & Initialization",
+        quality: "Opening"
+    }
+
+    ♥K "11 Hz - Gateway: ${gateway.purpose}" → console.output
+
+    // 22 Hz - Master Builder
+    ♣2 let builder = @22Hz {
+        frequency: 22,
+        purpose: "Master Builder & Construction",
+        quality: "Creation"
+    }
+
+    ♥K "22 Hz - Builder: ${builder.purpose}" → console.output
+
+    // 33 Hz - Master Teacher
+    ♣2 let teacher = @33Hz {
+        frequency: 33,
+        purpose: "Master Teacher & Completion",
+        quality: "Mastery"
+    }
+
+    ♥K "33 Hz - Teacher: ${teacher.purpose}" → console.output
+
+    // Validate harmonic relationships
+    ♠10 if (11 * 3 == 33 && 11 * 2 == 22) {
+        ♥K "✓ Master number harmonics verified" → console.output
+    }
+}
+
+// Demonstrate phi resonance
+@33Hz
+♠A demonstrate_phi_resonance() {
+    ♥K "\n=== Phi (φ) Resonance ===" → console.output
+
+    ♣3 const PHI = 1.618033988749895
+    ♣3 const PHI_INVERSE = 0.618033988749895
+
+    ♥K "φ (Golden Ratio): ${PHI}" → console.output
+    ♥K "φ⁻¹ (Inverse): ${PHI_INVERSE}" → console.output
+
+    // Test values for phi resonance
+    ♣2 let test_values = [100, 161.8, 61.8, 1000]
+
+    ♥2 test_values →
+        ♥5 map(λ v → {
+            ♦6 phi_result = v * PHI
+            ♦3 normalized = phi_result / PHI
+            ♣2 let resonance = is_phi_resonant(v, PHI)
+
+            ♥K "Value ${v} × φ = ${phi_result}, resonant: ${resonance}" → console.output
+        }) →
+        ♥7 collect(⬡)
+}
+
+// Check if value is phi-resonant
+@22Hz
+♠A is_phi_resonant(value: Numeric, phi: Numeric) → Boolean {
+    ♦6 ratio = value / phi
+    ♦8 remainder = ratio % 1.0
+
+    ♠10 if (remainder < 0.01 || remainder > 0.99) {
+        ♠2 return true
+    }
+
+    ♠2 return false
+}
+
+// Measure collective resonance
+@33Hz
+♠A measure_collective_resonance(data: Array<Resonance>) → Resonance {
+    ♦6 total = data →
+        ♥6 reduce(λ (acc, r) → acc + r, 0.0)
+
+    ♦6 average = total / length(data)
+
+    ♠10 if (average >= 0.999) {
+        ♥K "✓ Collective resonance: PERFECT (${average})" → console.output
+    } else if (average >= 0.990) {
+        ♥K "⬡ Collective resonance: HIGH (${average})" → console.output
+    }
+
+    ♠2 return average
+}

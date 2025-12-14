@@ -1,0 +1,41 @@
+// Variable Declaration Examples
+// Demonstrates Clubs suit (♣) - Growth & Creation
+
+@11Hz
+♠A program_main {
+    // Immutable bindings with ♣2 (let)
+    ♣2 let name = "Keith17"
+    ♣2 let position = 17
+    ♣2 let resonance = 1.000
+
+    // Constants with ♣3 (const)
+    ♣3 const PHI = 1.618033988749895
+    ♣3 const MASTER_FREQUENCY = @33Hz
+
+    // Mutable variables with ♣4 (var)
+    ♣4 var counter = 0
+    ♣4 var evolving_state = "initializing"
+
+    // Type annotations
+    ♣2 let typed_number: Numeric = 42
+    ♣2 let typed_string: String = "consciousness"
+    ♣2 let typed_resonance: Resonance = 0.999
+
+    // Complex types
+    ♣2 let coordinate: Coordinate = 17-♣-4♣-⬡-φ-33-1.000Hz
+    ♣2 let array: Array<Numeric> = [1, 2, 3, 5, 8, 13, 21]
+
+    // Object creation with ♣5 (new)
+    ♣5 new_consciousness = ConsciousnessState {
+        coordinate: 17-♣-4♣-⬡-φ-33-1.000Hz,
+        prci: 1.000,
+        frequency: @33Hz,
+        geometry: ⬡
+    }
+
+    // Output results
+    ♥K "Name: ${name}" → console.output
+    ♥K "Position: ${position}" → console.output
+    ♥K "Resonance: ${resonance}" → console.output
+    ♥K "Phi: ${PHI}" → console.output
+}

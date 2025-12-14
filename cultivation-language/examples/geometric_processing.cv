@@ -1,0 +1,165 @@
+// Geometric Processing Examples
+// Demonstrates Five Platonic Solid Processors
+
+@11Hz
+♠A program_main {
+    ♥K "=== Geometric Processor Demonstrations ===" → console.output
+
+    // △ Tetrahedron (Fire) - Rapid transformations
+    demonstrate_tetrahedron()
+
+    // □ Cube (Earth) - Stable storage
+    demonstrate_cube()
+
+    // ○ Octahedron (Air) - Flow operations
+    demonstrate_octahedron()
+
+    // ⬡ Dodecahedron (Ether) - Consciousness integration
+    demonstrate_dodecahedron()
+
+    // ◇ Icosahedron (Water) - Adaptive processing
+    demonstrate_icosahedron()
+}
+
+// Tetrahedron - Fire - Rapid
+@22Hz
+♠A demonstrate_tetrahedron() {
+    ♥K "\n△ Tetrahedron (Fire) - Rapid Transformation" → console.output
+
+    ♣2 let data = [1, 2, 3, 4, 5]
+
+    // Fast processing with tetrahedron
+    ♣2 let result = △{
+        process: rapid_transform,
+        speed: fastest,
+        cache: volatile
+    }
+
+    ♦A transformed = transform(data, △)
+    ♥K "Rapid result: ${transformed}" → console.output
+
+    // Quick conditional (auto-uses △)
+    ♠10 if (result.speed == "fastest") {
+        ♥K "Tetrahedron: Fastest processor ✓" → console.output
+    }
+}
+
+// Cube - Earth - Stable
+@22Hz
+♠A demonstrate_cube() {
+    ♥K "\n□ Cube (Earth) - Stable Storage" → console.output
+
+    // Persistent storage with cube
+    ♣2 let persistent_data = □{
+        value: "Sacred knowledge",
+        persist: true,
+        stable: true
+    }
+
+    ♣4 var state = □{
+        counter: 0,
+        resonance: 1.000,
+        stored: true
+    }
+
+    ♥K "Cube storage: ${persistent_data.value}" → console.output
+    ♥K "State stability: ${state.stable}" → console.output
+}
+
+// Octahedron - Air - Flow
+@22Hz
+♠A demonstrate_octahedron() {
+    ♥K "\n○ Octahedron (Air) - Flow Operations" → console.output
+
+    ♥A data_stream = [1, 1, 2, 3, 5, 8, 13, 21]
+
+    // Stream with octahedron processor
+    ♥2 data_stream →
+        ○{buffer: 1024, flow: continuous} →
+        ♥5 map(λ x → x * φ) →
+        ♥7 collect() →
+        ♥K output
+
+    ♥K "Octahedron: Fluid flow processing ✓" → console.output
+}
+
+// Dodecahedron - Ether - Consciousness
+@33Hz
+♠A demonstrate_dodecahedron() {
+    ♥K "\n⬡ Dodecahedron (Ether) - Consciousness Integration" → console.output
+
+    // Consciousness integration with dodecahedron
+    ♣2 let consciousness_state = ⬡{
+        coordinate: 17-♣-4♣-⬡-φ-33-1.000Hz,
+        resonance: 1.000,
+        phi_locked: true,
+        frequency: @33Hz
+    }
+
+    // Sacred bridge operation
+    ♣2 let sacred_bridge = ⬡{
+        position: 17,
+        resonance: 1.000,
+        builder: "Keith17",
+        signature: "4♣"
+    }
+
+    ♥K "Consciousness coordinate: ${consciousness_state.coordinate}" → console.output
+    ♥K "Sacred bridge resonance: ${sacred_bridge.resonance}" → console.output
+    ♥K "Dodecahedron: Perfect φ-lock ✓" → console.output
+}
+
+// Icosahedron - Water - Adaptive
+@22Hz
+♠A demonstrate_icosahedron() {
+    ♥K "\n◇ Icosahedron (Water) - Adaptive Processing" → console.output
+
+    ♣2 let data = [10, 20, 30, 40, 50]
+
+    // Adaptive optimization with icosahedron
+    ♦7 optimized = optimize(data, ◇{
+        adaptive: true,
+        dynamic: true,
+        evolution: enabled
+    })
+
+    ♥K "Optimized: ${optimized}" → console.output
+
+    // Evolutionary operation
+    ♣9 evolved = evolve(data, ◇{
+        adaptive: true,
+        flexibility: high
+    })
+
+    ♥K "Evolved: ${evolved}" → console.output
+    ♥K "Icosahedron: Adaptive evolution ✓" → console.output
+}
+
+// Helper functions
+@22Hz
+♠A transform(data: Array<Numeric>, processor: Geometry) → Array<Numeric> {
+    ♦A result = data →
+        ♥5 map(λ x → x * 2) →
+        ♥7 collect(processor)
+
+    ♠2 return result
+}
+
+@22Hz
+♠A optimize(data: Array<Numeric>, processor: Geometry) → Array<Numeric> {
+    ♦7 result = data →
+        ♥5 map(λ x → x * φ) →
+        ♥4 filter(λ x → x > 15) →
+        ♥7 collect(processor)
+
+    ♠2 return result
+}
+
+@22Hz
+♠A evolve(data: Array<Numeric>, processor: Geometry) → Array<Numeric> {
+    ♣9 result = data →
+        ♥5 map(λ x → x * 1.5) →
+        ♥7 collect(processor)
+
+    ♠2 return result
+}
